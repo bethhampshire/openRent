@@ -1,0 +1,81 @@
+﻿@use '../global/_design_tokens' as *;
+@use '../global/_variables' as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: $or-spacer-lg $or-padding-main;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        max-width: 28rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $or-spacer-md $or-spacer-sm;
+
+        p {
+            text-align: start;
+        }
+    }
+}
+
+.hero-primary {
+    background-color: $or-surface-background_colour-primary;
+}
+
+.hero-primary_inverse {
+    background-color: $or-surface-background_colour-primary_inverse;
+}
+
+.info-banner {
+    padding: $or-spacer-md $or-padding-main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $or-surface-background_colour-secondary;
+    color: $or-font-color-primary-inverse;
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $or-spacer-md $or-spacer-sm;
+    }
+}
+
+.info-banner_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 12rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .icon {
+        fill: $or-blue-10;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.icon {
+    width: 40px;
+    height:40px;
+}

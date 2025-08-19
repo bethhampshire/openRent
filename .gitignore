@@ -1,0 +1,7 @@
+﻿.vs/
+*.vsidx
+*.gz
+*.bz2
+*.zip
+node_modules/
+__pycache__/

@@ -1,0 +1,50 @@
+﻿@use '../global/_design_tokens' as *;
+@use '../global/variables' as *;
+@use '../global/surface' as *;
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: $or-radius-sm;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: $or-button-primary-background-colour;
+    color: $or-button-primary-font-colour;
+
+    @include surface-secondary-shadow_default;
+
+    &:hover, :focus {
+        @include surface-secondary-shadow_hover;
+    }
+
+    &:active {
+        @include surface-secondary-shadow_reverse;
+    }
+}
+
+.btn-secondary {
+    background-color: $or-button-secondary-background-colour;
+    color: $or-button-secondary-font-colour;
+
+    @include surface-primary-shadow_default;
+
+    &:hover, :focus {
+        @include surface-primary-shadow_hover;
+    }
+
+    &:active {
+        @include surface-primary-shadow_reverse;
+    }
+}
+
+.button-container {
+    display: flex; 
+
+    >:first-child {
+        margin-right: 2rem; 
+    }
+}

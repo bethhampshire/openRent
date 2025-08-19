@@ -1,0 +1,22 @@
+﻿@use '../global/_design_tokens' as *;
+@use '../global/_variables' as *;
+
+.navbar {
+    padding: $or-spacer-sm $or-padding-main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 480px) {
+        padding: $or-spacer-sm $or-spacer-sm;
+    }
+}
+
+.nav-logo {
+    width: 12rem;
+    fill: $or-brand-color-primary;
+
+    &.inverse {
+        fill: $or-blue-10;
+    }
+}

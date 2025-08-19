@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xyTYoxG0yZxYOHDciEfG7pqj4R7+MrIaBB2wCjRCDYGSZ1Np6Z9neqHIMH+r/Xfe0renJYs7dtERst8DmMAPPQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\openRent\\OpenRent\\OpenRent.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BethHampshire\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\8.0.4\\microsoft.netcore.app.host.linux-x64.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

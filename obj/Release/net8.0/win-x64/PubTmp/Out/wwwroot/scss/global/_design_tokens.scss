@@ -1,0 +1,124 @@
+﻿@use '_variables' as *;
+
+$or-brand-color-primary: $or-blue-50;
+$or-brand-color-secondary: $or-grey-60;
+
+$or-surface-background_colour-primary: $or-blue-10;
+$or-surface-background_colour-secondary: $or-brand-color-primary;
+$or-surface-background_colour-primary_inverse: $or-blue-80;
+$or-surface-radius: $or-radius-xs;
+
+$or-surface-shadow_colour_primary-highlight: $or-grey-5;
+$or-surface-shadow_colour_primary-shadow: $or-brand-color-primary;
+
+$or-surface-shadow_colour_secondary-highlight: $or-blue-20;
+$or-surface-shadow_colour_secondary-shadow: $or-blue-80;
+
+$or-surface-shadow_colour_primary-highlight-inverse: $or-blue-60;
+$or-surface-shadow_colour_primary-shadow-inverse: $or-blue-90;
+
+$or-button-primary-background-colour: $or-surface-background_colour-secondary;
+$or-button-primary-font-colour: $or-surface-background_colour-primary;
+
+$or-button-secondary-background-colour: $or-surface-background_colour-primary;
+$or-button-secondary-font-colour: $or-surface-background_colour-primary_inverse;
+
+
+// Spacing
+$or-padding-main: $or-spacer-xxl;
+
+$or-font-color-primary-inverse: $or-grey-10;
+// Fonts
+
+@media (min-width: 600px) {
+    .dm-sans-h1 {
+        font-size: 36px;
+    }
+}
+.dm-sans-h1 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+
+    @media (max-width: 480px) {
+        font-size: 36px;
+    }
+
+    &.primary {
+        color: $or-brand-color-primary;
+    }
+
+    &.primary_inverse {
+        color: $or-blue-20;
+    }
+}
+
+.dm-sans-h2 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+
+    @media (max-width: 480px) {
+        font-size: 30px;
+    }
+
+    &.primary {
+        color: $or-brand-color-primary;
+    }
+}
+
+.dm-sans-h3 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+
+    @media (max-width: 480px) {
+        font-size: 26px;
+    }
+
+    &.primary {
+        color: $or-brand-color-primary;
+    }
+}
+
+.dm-sans-body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+
+    &.primary {
+        color: $or-brand-color-primary;
+    }
+
+    &.primary_inverse {
+        color: $or-blue-20;
+    }
+}
+
+.dm-sans-button {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+
+    &.primary {
+        color: $or-brand-color-primary;
+    }
+}

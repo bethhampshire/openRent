@@ -1,0 +1,77 @@
+﻿@use '_design_tokens' as *;
+
+@mixin inner-shadows($shadows...) {
+    box-shadow: $shadows;
+}
+
+@mixin surface-primary-shadow_default {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_primary-highlight, 0.2), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_primary-highlight, 0.2), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_primary-shadow, 0.3), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_primary-shadow, 0.3));
+}
+
+@mixin surface-primary-shadow_hover {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_primary-highlight, 0.1), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_primary-highlight, 0.1), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_primary-shadow, 0.1), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_primary-shadow, 0.1));
+}
+
+@mixin surface-primary-shadow_reverse {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_primary-shadow, 0.2), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_primary-shadow, 0.2), inset 0 -2px 4px 0 rgba($or-surface-shadow_colour_primary-highlight, 0.3), inset -2px 0 4px 0 rgba($or-surface-shadow_colour_primary-highlight, 0.3));
+}
+
+@mixin surface-secondary-shadow_default {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_secondary-highlight, 0.2), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_secondary-highlight, 0.2), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_secondary-shadow, 0.3), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_secondary-shadow, 0.3));
+}
+
+@mixin surface-secondary-shadow_hover {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_secondary-highlight, 0.1), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_secondary-highlight, 0.1), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_secondary-shadow, 0.1), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_secondary-shadow, 0.1));
+}
+
+@mixin surface-secondary-shadow_reverse {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_secondary-shadow, 0.2), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_secondary-shadow, 0.2), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_secondary-highlight, 0.3), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_secondary-highlight, 0.3));
+}
+
+@mixin surface-primary-shadow_default-inverse {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_primary-highlight-inverse, 0.2), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_primary-highlight-inverse, 0.2), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_primary-shadow-inverse, 0.3), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_primary-shadow-inverse, 0.3));
+}
+
+@mixin surface-primary-shadow_hover-inverse {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_primary-highlight-inverse, 0.1), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_primary-highlight-inverse, 0.1), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_primary-shadow-inverse, 0.1), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_primary-shadow-inverse, 0.1));
+}
+
+@mixin surface-primary-shadow_reverse-inverse {
+    @include inner-shadows(inset 2px 0 4px 0 rgba($or-surface-shadow_colour_primary-shadow-inverse, 0.2), inset 0 4px 4px 0 rgba($or-surface-shadow_colour_primary-shadow-inverse, 0.2), inset 0 -2px 2px 0 rgba($or-surface-shadow_colour_primary-highlight-inverse, 0.3), inset -2px 0 2px 0 rgba($or-surface-shadow_colour_primary-highlight-inverse, 0.3));
+}
+
+.surface-primary {
+    background-color: $or-surface-background_colour-primary;
+
+    &.with-shadow {
+        @include surface-primary-shadow_default;
+    }
+
+    &.inverse {
+        background-color: $or-surface-background_colour-primary_inverse;
+    }
+
+    &.rounded {
+        border-radius: $or-surface-radius;
+    }
+}
+
+.surface-primary_inverse {
+    background-color: $or-surface-background_colour-primary_inverse;
+
+    &.with-shadow {
+        @include surface-primary-shadow_default-inverse;
+    }
+}
+
+.surface-secondary {
+    background-color: $or-surface-background_colour-secondary;
+
+    &.with-shadow {
+        @include surface-secondary-shadow_default;
+    }
+
+    &.with-shadow-reverse {
+        @include surface-secondary-shadow_reverse;
+    }
+}

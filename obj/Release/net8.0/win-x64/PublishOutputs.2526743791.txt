@@ -1,0 +1,9 @@
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\OpenRent.exe
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.Development.json
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.json
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\package-lock.json
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\package.json
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\OpenRent.dll
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\OpenRent.deps.json
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\OpenRent.runtimeconfig.json
+C:\Projects\openRent\OpenRent\obj\Release\net8.0\win-x64\PubTmp\Out\OpenRent.pdb
