@@ -21,9 +21,13 @@ namespace OpenRent.Pages
             Body = "We find you tenants and help with referencing, contracts and more if you need it.",
         };
 
-        public Logo Logo { get; set; } = new Logo
+        public NavBar NavBar { get; set; } = new NavBar
         {
             Variant = Variant.PrimaryInverse,
+            Logo = new Logo
+            {
+                Variant = Variant.PrimaryInverse
+            }
         };
 
         public void OnGet()

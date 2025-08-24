@@ -1,0 +1,46 @@
+﻿@using OpenRent.Pages.Models.Components
+@using OpenRent.Pages.Enums
+@model NavBar
+
+@{
+    if (Model.Variant == Variant.PrimaryInverse) {
+        <nav class="surface-primary_inverse with-shadow navbar">
+            <div class="nav-logo">
+                <a class="" asp-area="" asp-page="/Index">
+                    @await Html.PartialAsync("_Logo", Model.Logo)
+                </a>
+            </div>
+            <div class="nav-container">
+                <ul class="">
+                    <li class="">
+                        <a class="" asp-area="" asp-page="/Tenant">Tenant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" asp-area="" asp-page="/Landlord">Landlord</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    }
+    else if (Model.Variant == Variant.Primary)
+    {
+        <nav class="surface-primary with-shadow navbar">
+            <div class="nav-logo">
+                <a class="" asp-area="" asp-page="/Index">
+                    @await Html.PartialAsync("_Logo", Model.Logo)
+                </a>
+            </div>
+            <div class="nav-container">
+                <ul class="">
+                    <li class="">
+                        <a class="" asp-area="" asp-page="/Tenant">Tenant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" asp-area="" asp-page="/Landlord">Landlord</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    }
+}
+

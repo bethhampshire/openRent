@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using OpenRent.Pages.Enums;
+using OpenRent.Pages.Models.Components;
 
 namespace OpenRent.Pages
 {
@@ -11,6 +13,15 @@ namespace OpenRent.Pages
         {
             _logger = logger;
         }
+
+        public NavBar NavBar { get; set; } = new NavBar
+        {
+            Variant = Variant.Primary,
+            Logo = new Logo
+            {
+                Variant = Variant.Primary
+            }
+        };
 
         public void OnGet()
         {

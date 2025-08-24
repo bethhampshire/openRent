@@ -4,23 +4,7 @@
     ViewData["Title"] = "Landlord";
 }
 <header>
-    <nav class="surface-primary_inverse with-shadow navbar">
-        <div class="nav-logo">
-            <a class="" asp-area="" asp-page="/Index">
-                @await Html.PartialAsync("_Logo", Model.Logo);
-            </a>
-        </div>
-        <div class="nav-container">
-            <ul class="">
-                <li class="">
-                    <a class="" asp-area="" asp-page="/Tenant">Tenant</a>
-                </li>
-                <li class="nav-item">
-                    <a class="" asp-area="" asp-page="/Landlord">Landlord</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    @await Html.PartialAsync("_NavBar", Model.NavBar)
 </header>
 <main role="main" class="pb-3 surface-primary_inverse">
     @await Html.PartialAsync("_Hero", Model.Hero)

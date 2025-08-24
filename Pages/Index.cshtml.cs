@@ -33,6 +33,16 @@ namespace OpenRent.Pages
                         Variant = Variant.Primary
                     }
                 }
+
+        };
+
+        public NavBar NavBar { get; set; } = new NavBar
+        {
+            Variant = Variant.Primary,
+            Logo = new Logo
+            {
+                Variant = Variant.Primary
+            }
         };
 
         public void OnGet()
