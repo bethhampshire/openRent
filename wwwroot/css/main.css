@@ -211,9 +211,12 @@ input {
 
 .nav-logo {
   width: 12rem;
+}
+
+.logo {
   fill: #468CC8;
 }
-.nav-logo.inverse {
+.logo.inverse {
   fill: #E8EEF3;
 }
 
