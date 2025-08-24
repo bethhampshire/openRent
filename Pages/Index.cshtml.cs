@@ -14,9 +14,10 @@ namespace OpenRent.Pages
         }
 
         public Hero Hero { get; set; } = new Hero {
-            Title = "Renting the way it should be test",
+            Title = "Renting the way it should be",
             IsPrimary = true,
-            Body = "The destination for finding, advertising and managing rental property.test",
+            IsInverse = false,
+            Body = "The destination for finding, advertising and managing rental property.",
             Buttons = new List<Button> 
                 { 
                     new Button

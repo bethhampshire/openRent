@@ -6,5 +6,6 @@
         public bool IsPrimary { get; set; }
         public string Body { get; set; }
         public List<Button>? Buttons { get; set; }
+        public bool IsInverse { get; set; }
     }
 }

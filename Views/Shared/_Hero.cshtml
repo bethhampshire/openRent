@@ -4,15 +4,22 @@
 
 @{
     string containerClass = "";
-    if (!!Model.IsPrimary)
+    string fontClass = "";
+    if (Model.IsPrimary && !Model.IsInverse)
     {
         containerClass += "hero-primary";
+        fontClass += "primary";
+    }
+    else if (Model.IsPrimary && Model.IsInverse)
+    {
+        containerClass += "hero-primary_inverse";
+        fontClass += "primary_inverse";
     }
 }
 
 <div class="hero @containerClass">
-    <h1 class="dm-sans-h1 primary">@Model.Title</h1>
-    <p class="dm-sans-body primary">
+    <h1 class="dm-sans-h1 @fontClass">@Model.Title</h1>
+    <p class="dm-sans-body @fontClass">
         @Model.Body
     </p>
     <div class="button-container">

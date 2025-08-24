@@ -108,15 +108,6 @@
     </nav>
 </header>
 <main role="main" class="pb-3 surface-primary_inverse">
-    <div class="hero hero-primary_inverse">
-        <h1 class="dm-sans-h1 primary_inverse">Discover the services we provide for Landlords</h1>
-        <p class="dm-sans-body primary_inverse">
-            We find you tenants and help with referencing, contracts and more if you need it.
-        </p>
-@*         <div class="button-container">
-            <a class="btn btn-secondary dm-sans-button" asp-area="" asp-page="/Tenant">Tenant</a>
-            <a class="btn btn-secondary dm-sans-button" asp-area="" asp-page="/Landlord">Landlord</a>
-        </div> *@
-    </div>
+    @await Html.PartialAsync("_Hero", Model.Hero)
 </main>
 
