@@ -1,0 +1,14 @@
+﻿@using OpenRent.Pages.Models.Components
+@using OpenRent.Pages.Enums
+@model Button
+
+@{
+    if (Model.Variant == Variant.Secondary) {
+        <a class="btn btn-secondary dm-sans-button primary" href="@Model.Route">@Model.ButtonText</a>
+    }
+    else if (Model.Variant == Variant.Primary)
+    {
+        <a class="btn btn-primary dm-sans-button" href="@Model.Route">@Model.ButtonText</a>
+    }
+}
+

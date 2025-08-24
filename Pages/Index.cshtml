@@ -109,16 +109,8 @@
     </nav>
 </header>
 <main role="main" class="pb-3 surface-primary">
-    <div class="hero hero-primary">
-        <h1 class="dm-sans-h1 primary">Renting the way it should be</h1>
-        <p class="dm-sans-body primary">
-            The destination for finding, advertising and managing rental property.
-        </p>
-        <div class="button-container">
-            <a class="btn btn-secondary dm-sans-button primary" asp-area="" asp-page="/Tenant">Tenant</a>
-            <a class="btn btn-primary dm-sans-button" asp-area="" asp-page="/Landlord">Landlord</a>
-        </div>
-    </div>
+    @await Html.PartialAsync("_Hero", Model.Hero)
+
     <div class="info-banner">
         <div class="info-banner_card">
             <i class="icon">

@@ -1,0 +1,26 @@
+﻿@using OpenRent.Pages.Models.Components
+@using OpenRent.Pages.Enums
+@model Hero
+
+@{
+    string containerClass = "";
+    if (!!Model.IsPrimary)
+    {
+        containerClass += "hero-primary";
+    }
+}
+
+<div class="hero @containerClass">
+    <h1 class="dm-sans-h1 primary">@Model.Title</h1>
+    <p class="dm-sans-body primary">
+        @Model.Body
+    </p>
+    <div class="button-container">
+        @if (Model.Buttons != null) {
+            foreach (var button in Model.Buttons)
+            {
+                @await Html.PartialAsync("_Button", button);
+            }
+        }
+    </div>
+</div>
